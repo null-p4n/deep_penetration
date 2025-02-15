@@ -266,8 +266,6 @@ cherrytree --import-markdown notes.md
 - Link findings and evidence
 - Export to various formats
 
-[Previous sections remain the same up to OSINT Techniques]
-
 OSINT Techniques
 ---------------
 
