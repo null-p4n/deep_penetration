@@ -575,10 +575,9 @@ CVSS Scoring Guide:
 - 7.0-8.9:  High
 - 4.0-6.9:  Medium
 - 0.1-3.9:  Low
+```
 
 ### Port Scanning Fundamentals
-
-#### Nmap Basic Usage
 
 ```bash
 # Initial quick scan
